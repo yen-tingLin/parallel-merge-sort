@@ -8,7 +8,7 @@
 #include "test.c"
 
 
-int generate_random_number(int upper_limit, int lower_limit);
+
 void initialize_array(int* arr, int upper_limit, int length);
 void print_array(int* arr, int size);
 
