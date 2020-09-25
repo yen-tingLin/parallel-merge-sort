@@ -24,12 +24,6 @@ void parallel_merge_sort(int* arr, int left, int right);
  */
 void merge(int* arr, int left, int mid, int right);
 
-/* generate random numbers for input array
- * @ lower_limit : the lower bond for range of input array
- * @ upper_limit : the upper bond for range of input array
- */
-int generate_random_number(int lower_limit, int upper_limit);
-
 /* test whether the input array is well-sorted after merge sort
  * @ arr : pointer to sorted array 
  * @ size : size of array
