@@ -93,9 +93,10 @@ void parallel_merge_sort(int* arr, int left, int right)
 	pthread_join(thread_2, NULL);		
 	
 	merge(arr, left, mid, right);
+
+	
+	pthread_mutex_destroy(&mutex);	
 	
 	free(data_for_thread_1);
-	free(data_for_thread_2);	
-	
-	pthread_mutex_destroy(&mutex);
+	free(data_for_thread_2);
 }
